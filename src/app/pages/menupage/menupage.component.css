@@ -1,0 +1,19 @@
+form
+{
+    margin-top: 10%;
+    width: 50%;
+}
+img 
+{
+    border-radius: 6px;
+    padding: 10px 20px;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+@media screen and (max-width:600px) {
+    form 
+    {
+        width: 100%;
+    }
+}

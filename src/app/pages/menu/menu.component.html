@@ -1,0 +1,22 @@
+<div class="container mt-5 mb-5">
+
+    <div class="row">
+
+        <div class="col-lg-4" *ngFor="let fd of foodData">
+
+            <div class="foodbox mt-3 mb-3">
+                <img src="{{fd.foodImg}}">
+                <h1>{{fd.foodName}}</h1>
+                <p>{{fd.foodDetails}}</p>
+                <p>{{fd.foodPrice | currency:'INR'}}</p>
+                <br/>
+                <a class="buybtn" [routerLink]="['/menu',fd.id]">Buy Now &nbsp;<i class="bi bi-bag"></i></a>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+</div>
